@@ -44,10 +44,10 @@ const columns = [
       total: `$15,000`,
     });
   }
-const Colorlist = () => {
+const Customerlist = () => {
   return (
     <div> 
-        <h3 className="mb-4 title">Colors</h3>
+        <h3 className="mb-4 title">Customers List</h3>
       <div>
         <Table columns={columns} dataSource={data1} />
       </div>
@@ -55,4 +55,4 @@ const Colorlist = () => {
   )
 }
 
-export default Colorlist
+export default Customerlist

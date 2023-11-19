@@ -33,36 +33,12 @@ const Addproduct = () => {
      setDesc(e);
   };
   return (
-    <div>
-      <h3 className="mb-4 title">Add Product</h3>
+    <div className="align-items-center bg-green p-3 roudned-3 mt-4">
+      <h3 className="mb-4 title">Basic Information</h3>
       <div>
         <form action="">
-          <div className='mb-3'>
-          <CustomInput type="text" label="Enter Product Title" />
-          </div>
-          <ReactQuill 
-            theme="snow" 
-            value={desc}  
-            onChange={(evt) => {
-              handleDesc(evt);
-            }} 
-            />
-          <div className='mb-3'>
-            <CustomInput type="number" label="Enter Product Price" />
-          </div>
-          <select name="" className="form-control py-3 mb-3" id="">
-              <option value="">Select Brand</option>
-          </select>
-          <select name="" className="form-control py-3 mb-3" id="">
-              <option value="">Select Category</option>
-          </select>
-          <select name="" className="form-control py-3 mb-3" id="">
-              <option value="">Select Color</option>
-          </select>
-          <div className='mb-3'>
-            <CustomInput type="number" label="Enter Product Price" />
-          </div>
-          <Dragger {...props}>
+        <div className="align-items-center bg-white p-3 roudned-3 mt-4">
+        <Dragger {...props}>
           <p className="ant-upload-drag-icon">
             <InboxOutlined />
           </p>
@@ -72,6 +48,85 @@ const Addproduct = () => {
             banned files.
           </p>
         </Dragger>
+          <div className='mb-3'>
+          <h4 className="mb-0 mt-4">Name</h4>
+          <CustomInput 
+          type="text" 
+          label="Enter Product Title" />
+          </div>
+          <div>
+          <h4 className="mb-0 mt-4">Description</h4>
+          <ReactQuill 
+            theme="snow" 
+            value={desc}  
+            onChange={(evt) => {
+              handleDesc(evt);
+            }} 
+            />
+          </div>
+          <div className='mb-3'>
+            <CustomInput 
+              type="number" 
+              label="Enter Product Price" 
+            />
+          </div>
+          <select name="" className="form-control py-3 mb-3" id="">
+              <option value="">Select Size</option>
+          </select>
+          </div>
+
+          <div className="align-items-center bg-white p-3 roudned-3 mt-4">
+          <div className="">
+            <h4 className="mb-0 mt-4">Visibllity</h4>
+            <div className="d-flex align-items-center gap-1 mt-2">
+              <input type="checkbox" />
+              <h6>Published</h6>
+            </div>
+            <div className="d-flex align-items-center gap-1 mt-2">
+              <input type="checkbox" />
+              <h6>Scheduled</h6>
+            </div>
+            <div className="d-flex align-items-center gap-1 mt-2">
+              <input type="checkbox" />
+              <h6>Hidden</h6>
+            </div>
+            <div className="mb-3 mt-3">
+              <h6>Publish date</h6>
+            <input 
+              type="date" 
+              label="Enter Product Price" 
+            />
+          </div>
+          </div>
+          </div>
+          
+          <div className="align-items-center bg-white p-3 roudned-3 mt-4">
+          <div className="mb-3 mt-3">
+              <h6>Categories</h6>
+              <div className='mb-3'>
+                <CustomInput type="select" label="Add Category" />
+              </div>
+              <button 
+                className="btn btn-success border-0 my-1 mb-3" 
+                type="submit"
+                >
+                Add new category
+              </button>
+          </div>
+          <div className="mb-3 mt-3">
+              <h6>Tags</h6>
+              <div className='mb-3'>
+                <CustomInput type="select" label="Add Tags" />
+              </div>
+              <button 
+                className="btn btn-success border-0 my-1 mb-3" 
+                type="submit"
+                >
+                Add Tags
+              </button>
+          </div>
+          </div>
+
 
         <button 
             className="btn btn-success border-0 rounded-3 my-5" 

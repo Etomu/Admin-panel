@@ -10,16 +10,18 @@ import Bloglist from "./pages/Bloglist";
 import Blogcatlist from "./pages/Blogcatlist";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
-import Colorlist from "./pages/Colorlist";
+import Customerlist from "./pages/Customerlist";
+import Customerdetails from "./pages/Customerdetails";
 import Categorylist from "./pages/Categorylist";
 import Brandlist from "./pages/Brandlist";
 import Productlist from "./pages/Productlist";
 import Addblog from "./pages/Addblog";
 import Addblogcat from "./pages/Addblogcat";
-import Addcolor from "./pages/Addcolor";
 import Addcat from "./pages/Addcat";
 import Addbrand from "./pages/Addbrand";
 import Addproduct from "./pages/Addproduct";
+import Couponlist from "./pages/Couponlist";
+import AddCoupon from "./pages/AddCoupon";
 
 
 
@@ -36,18 +38,22 @@ function App() {
         <Route path="enquiries" element={<Enquiries />} />
         <Route path="blog-list" element={<Bloglist />} />
         <Route path="blog" element={<Addblog />} />
+        <Route path="coupon-list" element={<Couponlist />} />
+        <Route path="coupon" element={<AddCoupon />} />
         <Route path="blog-category-list" element={<Blogcatlist />} />
         <Route path="blog-category" element={<Addblogcat />} />
         <Route path="orders" element={<Orders />} />
         <Route path="customers" element={<Customers />} />
-        <Route path="list-color" element={<Colorlist />} />
-        <Route path="color" element={<Addcolor />} />
+        <Route path="list-customers" element={<Customerlist />} />
+        <Route path="customer-details" element={<Customerdetails />} />
         <Route path="list-category" element={<Categorylist />} />
         <Route path="category" element={<Addcat />} />
         <Route path="list-brand" element={<Brandlist />} />
         <Route path="brand" element={<Addbrand />} />
         <Route path="list-product" element={<Productlist />} />
         <Route path="product" element={<Addproduct />} />
+        <Route path="customer-details" element={<Customerdetails />} />
+        <Route path="list-customers" element={<Customers />} />
         </Route>
       </Routes>
     </Router>

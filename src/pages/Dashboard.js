@@ -180,17 +180,31 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+      <div className="align-items-center bg-white p-3 roudned-3 mt-4">
       <div className="mt-4">
         <h3 className="mb-5 title">Income Statics</h3>
         <div>
           <Column {...config} />
         </div>
       </div>
+      </div>
+      <div className="align-items-center bg-white p-3 roudned-3 mt-4">
       <div className="mt-4">
-        <h3 className="mb-5 title">Recent Orders</h3>
-        <div>
-          <Table columns={columns} dataSource={data1} />
+        <div className="d-flex justify-content-around align-items-start gap-6">
+            <div>
+              <h3 className="mb-5 title">Recent Orders</h3>
+          <div>
+            <Table columns={columns} dataSource={data1} />
+          </div>
+            </div>
+          <div>
+          <h3 className="mb-5 title">Recent Orders</h3>
+          <div>
+            <Table columns={columns} dataSource={data1} />
+          </div>
+          </div>
         </div>
+      </div>
       </div>
     </div>
   );

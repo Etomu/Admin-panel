@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import { MenuFoldOutlined, MenuUnfoldOutlined, } from '@ant-design/icons';
 import {
-  AiOutlineDashboard, 
-  AiOutlineShoppingCart, 
-  AiOutlineUser,
-  AiOutlineBgColors, 
+  AiOutlineShoppingCart,  
 } from 'react-icons/ai';
 import { SiBrandfolder } from "react-icons/si";
 import { BiCategoryAlt } from "react-icons/bi";
 import { RiCouponLine } from "react-icons/ri";
 import { ImBlog } from "react-icons/im";
+import { IoMdSettings } from "react-icons/io";
+import { FaSignOutAlt } from "react-icons/fa";
+import { IoIosChatboxes } from "react-icons/io";
+import { MdForwardToInbox } from "react-icons/md";
+import { FaMailBulk } from "react-icons/fa";
+import { MdDashboardCustomize } from "react-icons/md";
+import { BsDatabaseFill } from "react-icons/bs";
+import { FaUserCheck } from "react-icons/fa";
+import { HiClipboardList } from "react-icons/hi";
+import { FaClipboardUser } from "react-icons/fa6";
+import { FaClipboardCheck, FaUserFriends } from "react-icons/fa";
 import { FaClipboardList, FaBloggerB } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -45,17 +53,29 @@ const MainLayout = () => {
           items={[
             {
               key: "",
-              icon: <AiOutlineDashboard className="fs-4" />,
+              icon: <MdDashboardCustomize className="fs-4" />,
               label: 'Dashboard',
             },
             {
               key: "customers",
-              icon: <AiOutlineUser className="fs-4" />,
+              icon: <FaUserFriends className="fs-4" />,
               label: 'Customers',
+              children: [
+                {
+                  key: "list-customers",
+                  icon: <FaClipboardUser className="fs-4" />,
+                  label: "Customers List",
+                },
+                {
+                  key: "customer-details",
+                  icon: <FaUserCheck className="fs-4" />,
+                  label: "Customer Details",
+                },
+              ]
             },
             {
               key: "Catalog",
-              icon: <AiOutlineShoppingCart className="fs-4" />,
+              icon: <BsDatabaseFill className="fs-4" />,
               label: "Catalog",
               children: [
                 {
@@ -69,16 +89,6 @@ const MainLayout = () => {
                   label: "Product List",
                 },
                 {
-                  key: "brand",
-                  icon: <SiBrandfolder className="fs-4" />,
-                  label: "Brand",
-                },
-                {
-                  key: "list-brand",
-                  icon: <SiBrandfolder className="fs-4" />,
-                  label: "Brand List ",
-                },
-                {
                   key: "category",
                   icon: <BiCategoryAlt className="fs-4" />,
                   label: "Category",
@@ -88,28 +98,40 @@ const MainLayout = () => {
                   icon: <BiCategoryAlt className="fs-4" />,
                   label: "Category List",
                 },
-                {
-                  key: "color",
-                  icon: <AiOutlineBgColors className="fs-4" />,
-                  label: "Color",
-                },
-                {
-                  key: "list-color",
-                  icon: <AiOutlineBgColors className="fs-4" />,
-                  label: "Color List",
-                },
               ],
             },
             {
               key: "orders",
-              icon: <FaClipboardList className="fs-4" />,
+              icon: <HiClipboardList className="fs-4" />,
               label: "Orders",
+              children: [
+                {
+                  key: "orders",
+                  icon: <FaClipboardCheck className="fs-4" />,
+                  label: "Order Details",
+                },
+                {
+                  key: "list-order",
+                  icon: <FaClipboardList className="fs-4" />,
+                  label: "Order List",
+                },
+              ]
             },
             {
               key: "marketing",
               icon: <RiCouponLine className="fs-4" />,
               label: "Marketing",
               children: [
+                {
+                  key: "banner",
+                  icon: <SiBrandfolder className="fs-4" />,
+                  label: "Banner",
+                },
+                {
+                  key: "list-banner",
+                  icon: <SiBrandfolder className="fs-4" />,
+                  label: "Banner List ",
+                },
                 {
                   key: "coupon",
                   icon: <ImBlog className="fs-4" />,
@@ -153,6 +175,35 @@ const MainLayout = () => {
               key: "enquiries",
               icon: <FaClipboardList className="fs-4" />,
               label: "Enquiries",
+            },
+            {
+              key: "inbox",
+              icon: <MdForwardToInbox className="fs-4" />,
+              label: "Inbox",
+              children: [
+                {
+                  key: "chatbox",
+                  icon: <IoIosChatboxes className="fs-4" />,
+                  label: "Chatbox",
+                },
+                {
+                  key: "maillist",
+                  icon: <FaMailBulk className="fs-4" />,
+                  label: "Mail Lists",
+                },
+              ]
+            },
+            {
+              key: "settings",
+              icon: <IoMdSettings className="fs-4" />,
+              label: "Settings",
+              children: [
+                {
+                  key: "signout",
+                  icon: <FaSignOutAlt className="fs-4" />,
+                  label: "Signout",
+                },
+              ]
             },
           ]}
         />
