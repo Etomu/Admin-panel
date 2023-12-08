@@ -46,10 +46,10 @@ const columns = [
   }
 const Orders = () => {
   return (
-    <div> 
+    <div className="p-4 rounded rounded-5 border border-1 border-black"> 
         <h3 className="mb-4 title">Orders</h3>
       <div>
-        <Table columns={columns} dataSource={data1} />
+        
       </div>
     </div>
   )

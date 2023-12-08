@@ -1,58 +1,34 @@
-import React from 'react'
-import { Table } from "antd";
+import React from "react";
 
-
-const columns = [
-    {
-      title: "No.",
-      dataIndex: "key",
-    },
-    {
-      title: "Customer",
-      dataIndex: "name",
-    },
-    {
-      title: "Product",
-      dataIndex: "product",
-    },
-    {
-      title: "Status",
-      dataIndex: "staus",
-    },
-    {
-      title: "Address",
-      dataIndex: "adres",
-    },
-    {
-      title: "Date",
-      dataIndex: "date",
-    },
-    {
-      title: "Total",
-      dataIndex: "total",
-    },
-  ];
-  const data1 = [];
-  for (let i = 0; i < 46; i++) {
-    data1.push({
-      key: i,
-      name: `Edward King`,
-      product: 32,
-      adres: `London, Park Lane no. ${i}`,
-      staus: `Pending`,
-      date: `2023-10-02`,
-      total: `$15,000`,
-    });
-  }
 const Customerlist = () => {
   return (
-    <div> 
-        <h3 className="mb-4 title">Customers List</h3>
+    <div>
       <div>
-        <Table columns={columns} dataSource={data1} />
+        <h3 className="mb-4 title">Customer List</h3>
+        <div>
+          <div className="d-inline-flex gap-5 p-3">
+          <div>
+            Name
+            <div>
+              <div className="justify-content-around align-items-start bg-white p-3 rounded rounded-5 border border-black border-3">
+                <img
+                width={38}
+                height={38}
+                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700666991/avatar-1_tjmyun.png"/>
+                John Doe
+                </div>
+            </div>
+          </div>
+          <div>Email</div>
+          <div>Phone Number</div>
+          <div>Gender</div>
+          <div></div>
+          </div>
+        </div>
       </div>
+      <div></div>
     </div>
-  )
-}
+  );
+};
 
-export default Customerlist
+export default Customerlist;

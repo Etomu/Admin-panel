@@ -16,11 +16,23 @@ const Login = () => {
         <form action="">
         <CustomInput type="text" label="Email Address" id="email" />
         <CustomInput type="password" label="Password" id="pass" />
-        <div className="mb-3 text-end">
+        <div className="d-flex align-items-center gap-1 mt-2 text-start">
+          <input type="checkbox" />
+          <div className="">
+          <p className="m-0">Remember me</p>
+          </div>
+        </div>
+        <div className="mb-1 text-end">
           <Link to="forgot-password" className="">
             Forgot Password?
           </Link>
         </div>
+        <div className="mb-2 text-start">
+          <Link to="sign-up" className="">
+            Don't have an account? Sign Up
+          </Link>
+        </div>
+
 
         <Link 
           to="/admin"

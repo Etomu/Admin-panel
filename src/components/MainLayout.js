@@ -12,12 +12,11 @@ import { FaSignOutAlt } from "react-icons/fa";
 import { IoIosChatboxes } from "react-icons/io";
 import { MdForwardToInbox } from "react-icons/md";
 import { FaMailBulk } from "react-icons/fa";
-import { MdDashboardCustomize } from "react-icons/md";
+import { MdDashboardCustomize, MdLocalShipping } from "react-icons/md";
 import { BsDatabaseFill } from "react-icons/bs";
-import { FaUserCheck } from "react-icons/fa";
-import { HiClipboardList } from "react-icons/hi";
+import { LiaShippingFastSolid } from "react-icons/lia";
 import { FaClipboardUser } from "react-icons/fa6";
-import { FaClipboardCheck, FaUserFriends } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
 import { FaClipboardList, FaBloggerB } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import { Link } from 'react-router-dom'
@@ -45,7 +44,7 @@ const MainLayout = () => {
           mode="inline"
           defaultSelectedKeys={[""]}
           onClick={({ key }) => {
-            if (key == "signout") {
+            if (key === "signout") {
             } else {
               navigate(key);
             }
@@ -65,11 +64,6 @@ const MainLayout = () => {
                   key: "list-customers",
                   icon: <FaClipboardUser className="fs-4" />,
                   label: "Customers List",
-                },
-                {
-                  key: "customer-details",
-                  icon: <FaUserCheck className="fs-4" />,
-                  label: "Customer Details",
                 },
               ]
             },
@@ -102,18 +96,13 @@ const MainLayout = () => {
             },
             {
               key: "orders",
-              icon: <HiClipboardList className="fs-4" />,
-              label: "Orders",
+              icon: <MdLocalShipping className="fs-4" />,
+              label: "Order",
               children: [
                 {
                   key: "orders",
-                  icon: <FaClipboardCheck className="fs-4" />,
-                  label: "Order Details",
-                },
-                {
-                  key: "list-order",
-                  icon: <FaClipboardList className="fs-4" />,
-                  label: "Order List",
+                  icon: <LiaShippingFastSolid className="fs-4" />,
+                  label: "Orders",
                 },
               ]
             },
