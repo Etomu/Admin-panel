@@ -87,11 +87,6 @@ const MainLayout = () => {
                   icon: <BiCategoryAlt className="fs-4" />,
                   label: "Category",
                 },
-                {
-                  key: "list-category",
-                  icon: <BiCategoryAlt className="fs-4" />,
-                  label: "Category List",
-                },
               ],
             },
             {
@@ -122,14 +117,9 @@ const MainLayout = () => {
                   label: "Banner List ",
                 },
                 {
-                  key: "coupon",
-                  icon: <ImBlog className="fs-4" />,
-                  label: "Add Coupon",
-                },
-                {
                   key: "coupon-list",
                   icon: <RiCouponLine className="fs-4" />,
-                  label: "Coupon List",
+                  label: "Coupons",
                 },
               ],
             },
@@ -149,14 +139,9 @@ const MainLayout = () => {
                   label: "Blog List",
                 },
                 {
-                  key: "blog-category",
-                  icon: <ImBlog className="fs-4" />,
-                  label: "Add Blog Category",
-                },
-                {
                   key: "blog-category-list",
                   icon: <FaBloggerB className="fs-4" />,
-                  label: "Blog Category List",
+                  label: "Blog Category",
                 },
               ],
             },

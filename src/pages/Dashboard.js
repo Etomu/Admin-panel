@@ -156,10 +156,9 @@ const Dashboard = () => {
     <div>
       <div className="d-flex">
       <h3 className="mb-4 title">Dashboard</h3>
-      <select placeholder="Month"></select>
       </div>
       <div className="d-flex justify-content-between align-items-center gap-3">
-        <div className="d-flex bi justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-3">
+        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-1">
           <div>
             <p className="desc">Total Sales</p>
             <h4 className="mb-0 sub-title">$7899.78</h4>
@@ -171,7 +170,7 @@ const Dashboard = () => {
             <p className="mb-0  desc">Last 30 Days</p>
           </div>
         </div>
-        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-3">
+        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-1">
           <div>
             <p className="desc">Average Order Value</p>
             <h4 className="mb-0 sub-title">$373.98</h4>
@@ -183,7 +182,7 @@ const Dashboard = () => {
             <p className="mb-0  desc">Last 30 Days</p>
           </div>
         </div>
-        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-3">
+        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-1">
           <div>
             <p className="desc">Total Orders</p>
             <h4 className="mb-0 sub-title">478</h4>
@@ -195,7 +194,7 @@ const Dashboard = () => {
             <p className="mb-0  desc">Last 30 Days</p>
           </div>
         </div>
-        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-3">
+        <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded rounded-5 border border-black border-1">
           <div>
             <p className="desc">Total Income</p>
             <h4 className="mb-0 sub-title">$1100</h4>
@@ -210,7 +209,7 @@ const Dashboard = () => {
       </div>
       <div className="d-flex gap-4">
         <div className="w-75">
-          <div className="align-items-center bg-white p-3 rounded rounded-5 mt-4 border border-black border-3">
+          <div className="align-items-center bg-white p-3 rounded rounded-5 mt-4 border border-black border-1">
             <div className="mt-4">
               <h3 className="mb-3 title p-3">Earning Statistics</h3>
               <div>
@@ -229,7 +228,7 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="w-25 mt-4 justify-content-between p-3 bg-white rounded rounded-5 border border-black border-3">
+        <div className="w-25 mt-4 justify-content-between p-3 bg-white rounded rounded-5 border border-black border-1">
           <h3 className="mb-4 title p-3">Best Selling</h3>
           <div>
             <div>
@@ -379,7 +378,7 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="text-center border-top border-black border-2">
+            <div className="text-center border-top border-black border-1">
               <div className="mt-2">
                 <a className="fw-bold black">View All</a>
               </div>
@@ -389,7 +388,7 @@ const Dashboard = () => {
       </div>
       <div className="d-flex gap-4">
         <div className="w-25 rounded rounded-3">
-          <div className="align-items-center bg-white p-3 mt-4 border border-black border-3">
+          <div className="align-items-center bg-white p-3 mt-4 border border-black border-1">
             <div className="mt-4">
               <h3 className="mb-3 title p-3">Recent Activity</h3>
               <div>
@@ -447,19 +446,19 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-3">
+        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-1">
           <h3 className="mb-2 mt-4 p-3 title">Total Sales</h3>
           <p>This year total data</p>
           <div></div>
           <h4>Sales volume increased intensely!</h4>
         </div>
-        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-3">
+        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-1">
           <h3 className="mb-2 mt-4 p-3 title">Total Sales</h3>
           <p>This year total data</p>
           <div></div>
           <h4>Sales volume increased intensely!</h4>
         </div>
-        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-3">
+        <div className="w-25 mt-4 justify-content-between p-4 bg-white rounded rounded-5 border border-black border-1">
           <h3 className="mb-2 mt-4 p-3 title">Website Visitors</h3>
           <p>This chart is showing every month's value</p>
           <div></div>

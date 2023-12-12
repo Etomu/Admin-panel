@@ -1,55 +1,56 @@
 import React from 'react'
-import { Table } from "antd";
 
-
-const columns = [
-    {
-      title: "No.",
-      dataIndex: "key",
-    },
-    {
-      title: "Customer",
-      dataIndex: "name",
-    },
-    {
-      title: "Product",
-      dataIndex: "product",
-    },
-    {
-      title: "Status",
-      dataIndex: "staus",
-    },
-    {
-      title: "Address",
-      dataIndex: "adres",
-    },
-    {
-      title: "Date",
-      dataIndex: "date",
-    },
-    {
-      title: "Total",
-      dataIndex: "total",
-    },
-  ];
-  const data1 = [];
-  for (let i = 0; i < 46; i++) {
-    data1.push({
-      key: i,
-      name: `Edward King`,
-      product: 32,
-      adres: `London, Park Lane no. ${i}`,
-      staus: `Pending`,
-      date: `2023-10-02`,
-      total: `$15,000`,
-    });
-  }
 const Blogcatlist = () => {
   return (
-    <div> 
-        <h3 className="mb-4 title">Blog Categories</h3>
+    <div className="d-flex gap-4">
+      <div className="w-25">
+      <div className="border border-1 p-4 bg-white">
+      <h3 className="mb-4 title">Blog Category</h3>
       <div>
-        <Table columns={columns} dataSource={data1} />
+        <form action="">
+        <input class="form-control" type="text" placeholder="Enter Category Name Here..." aria-label="" />
+          <button type="button" class="btn btn-warning mt-3">Add Blog Category</button>
+        </form>
+      </div>
+      </div>
+      </div>
+
+      <div className="w-75">
+        <div className="border border-1 p-4 bg-white">
+          <h3 className="mb-4 title">Blog Categories</h3>
+          <div>
+            <table class="table border border-1 p-4">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Blog Category List</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </div>
   )
