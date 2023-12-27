@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowDownRight, BsArrowUpRight } from "react-icons/bs";
-import { DualAxes, Column } from "@ant-design/plots";
+import { DualAxes } from "@ant-design/plots";
 import { Button, Table } from "antd";
 
 const columns = [

@@ -1,70 +1,28 @@
 import React from "react";
-import { Table } from "antd";
 
-const columns = [
-  {
-    title: "No.",
-    dataIndex: "key",
-  },
-  {
-    title: "Customer",
-    dataIndex: "name",
-  },
-  {
-    title: "Product",
-    dataIndex: "product",
-  },
-  {
-    title: "Status",
-    dataIndex: "staus",
-  },
-  {
-    title: "Address",
-    dataIndex: "adres",
-  },
-  {
-    title: "Date",
-    dataIndex: "date",
-  },
-  {
-    title: "Total",
-    dataIndex: "total",
-  },
-];
-const data1 = [];
-for (let i = 0; i < 46; i++) {
-  data1.push({
-    key: i,
-    name: `Edward King`,
-    product: 32,
-    adres: `London, Park Lane no. ${i}`,
-    staus: `Pending`,
-    date: `2023-10-02`,
-    total: `$15,000`,
-  });
-}
+
 const Orders = () => {
   return (
     <div className="bg-white p-4 rounded rounded-5 border border-1 border-black">
       <div className="border-bottom border-black">
         <h3 className="mb-1 title">Orders</h3>
         <div class="d-flex flex-wrap m-2 mb-4">
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             All Orders <span>(68)</span>
           </a>
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             New <span>(29)</span>
           </a>
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             In Progress <span>(34)</span>
           </a>
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             To Be Shipped <span>(11)</span>
           </a>
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             Shipped <span>(56)</span>
           </a>
-          <a class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
+          <a href="#" class="p-2 border text-decoration-none fw-semibold fs-6 flex-fill text-center ">
             Completed <span>(58)</span>
           </a>
         </div>

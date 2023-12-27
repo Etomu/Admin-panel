@@ -1,7 +1,4 @@
 import React from "react";
-import { Table } from "antd";
-import { BiEdit } from "react-icons/bi";
-import { AiFillDelete } from "react-icons/ai";
 
 const columns = [
   {
@@ -59,7 +56,7 @@ const ProductList = () => {
           <a>
             <div>
               <img
-                className="img-thumbnail rounded mx-auto d-block"
+                className="object-fit-fill"
                 width={280}
                 height={225}
                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700667551/Nordic_Ergonomic_Convertible_Modular_Sectional_Sofa_L-Shaped_Minimalist_Couch1_cbxl0u.jpg"
@@ -78,13 +75,16 @@ const ProductList = () => {
                 <h6 className="mt-2 fw-bold fs-6">
                   . PRICE- <span className="fw-lighter fs-6">2kg</span>
                 </h6>
+                <h6 className="mt-3 fw-bold fs-6">
+                  . STATUS- <span className="bg-success text-light rounded rounded-5 fw-normal p-1 fs-6">ONLINE</span>
+                </h6>
               </div>
             </div>
           </a>
           <a>
             <div>
               <img
-                className="img-thumbnail rounded mx-auto d-block"
+                className="object-fit-fill"
                 width={280}
                 height={225}
                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700667502/Tatami_Fat_Single_Sofa_Leisure_Chair7_iccghr.jpg"
@@ -103,13 +103,16 @@ const ProductList = () => {
                 <h6 className="mt-2 fw-bold fs-6">
                   . PRICE- <span className="fw-lighter fs-6">2kg</span>
                 </h6>
+                <h6 className="mt-3 fw-bold fs-6">
+                  . STATUS- <span className="bg-danger text-light rounded rounded-5 fw-normal p-1 fs-6">OFFLINE</span>
+                </h6>
               </div>
             </div>
           </a>
           <a>
             <div>
               <img
-                className="img-thumbnail rounded mx-auto d-block"
+                className="object-fit-fill"
                 width={280}
                 height={225}
                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700667472/smartgadget3_ufjzxt.jpg"
@@ -128,13 +131,16 @@ const ProductList = () => {
                 <h6 className="mt-2 fw-bold fs-6">
                   . PRICE- <span className="fw-lighter fs-6">2kg</span>
                 </h6>
+                <h6 className="mt-3 fw-bold fs-6">
+                  . STATUS- <span className="bg-success text-light rounded rounded-5 fw-normal p-1 fs-6">ONLINE</span>
+                </h6>
               </div>
             </div>
           </a>
           <a>
             <div>
               <img
-                className="img-thumbnail rounded mx-auto d-block"
+                className="object-fit-fill"
                 width={280}
                 height={225}
                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700667521/Wabi-sabi_Table_modern_center_tea_table3_oaklsp.jpg"
@@ -153,13 +159,16 @@ const ProductList = () => {
                 <h6 className="mt-2 fw-bold fs-6">
                   . PRICE- <span className="fw-lighter fs-6">2kg</span>
                 </h6>
+                <h6 className="mt-3 fw-bold fs-6">
+                  . STATUS- <span className="bg-danger text-light rounded rounded-5 fw-normal p-1 fs-6">OFFLINE</span>
+                </h6>
               </div>
             </div>
           </a>
           <a>
             <div>
               <img
-                className="img-thumbnail rounded mx-auto d-block"
+                className="object-fit-fill"
                 width={280}
                 height={225}
                 src="https://res.cloudinary.com/duzshb1ng/image/upload/v1700667450/rug30_huarby.jpg"
@@ -177,6 +186,9 @@ const ProductList = () => {
                 </h6>
                 <h6 className="mt-2 fw-bold fs-6">
                   . PRICE- <span className="fw-lighter fs-6">2kg</span>
+                </h6>
+                <h6 className="mt-3 fw-bold fs-6">
+                  . STATUS- <span className="bg-success text-light rounded rounded-5 fw-normal p-1 fs-6">ONLINE</span>
                 </h6>
               </div>
             </div>

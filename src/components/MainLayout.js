@@ -107,14 +107,14 @@ const MainLayout = () => {
               label: "Marketing",
               children: [
                 {
-                  key: "banner",
+                  key: "brand",
                   icon: <SiBrandfolder className="fs-4" />,
-                  label: "Banner",
+                  label: "Brand",
                 },
                 {
-                  key: "list-banner",
+                  key: "list-brand",
                   icon: <SiBrandfolder className="fs-4" />,
-                  label: "Banner List ",
+                  label: "Brand List ",
                 },
                 {
                   key: "coupon-list",
@@ -156,14 +156,14 @@ const MainLayout = () => {
               label: "Inbox",
               children: [
                 {
-                  key: "chatbox",
-                  icon: <IoIosChatboxes className="fs-4" />,
-                  label: "Chatbox",
-                },
-                {
                   key: "maillist",
                   icon: <FaMailBulk className="fs-4" />,
                   label: "Mail Lists",
+                },
+                {
+                  key: "chatbox",
+                  icon: <IoIosChatboxes className="fs-4" />,
+                  label: "Chatbox",
                 },
               ]
             },
