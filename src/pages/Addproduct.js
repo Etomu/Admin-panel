@@ -153,7 +153,7 @@ const Addproduct = () => {
                     </label>
                   </div>
                   <div class="input-group mb-3">
-                    <span class="input-group-text">£</span>
+                    <span class="input-group-text">%</span>
                     <input
                       type="text"
                       class="form-control"
