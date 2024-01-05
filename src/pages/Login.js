@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Login = () => {
   return (
-    <div className="py-5" style={{background: "#ff9d00", minHeight: "100vh" }}>
+    <div className="py-5" style={{background: "#ddd", minHeight: "100vh" }}>
       <br />
       <br />
       <br />

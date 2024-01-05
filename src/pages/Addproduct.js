@@ -212,7 +212,7 @@ const Addproduct = () => {
                   <textarea
                     class="form-control"
                     id="exampleFormControlTextarea1"
-                    rows="3"
+                    rows="6"
                   ></textarea>
                 </div>
                 <div className="w-25 mt-4">
